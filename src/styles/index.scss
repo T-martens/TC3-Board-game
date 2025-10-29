@@ -1,3 +1,9 @@
+@use "./mixin.scss";
+
+:root {
+  --Grid-gutterSize: 25px;
+}
+
 body {
     margin: 0;
     padding: 0;

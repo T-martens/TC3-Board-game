@@ -12,7 +12,7 @@ module.exports = (env, argv) => {
         entry: './src/index.tsx',
         output: {
             path: path.resolve(__dirname, 'dist'),
-            filename: isProd ? 'bundle.[contenthash].js' : 'bundle.js',
+            filename: isProd ? '[name].[contenthash].js' : '[name].js',
             assetModuleFilename: 'assets/[hash][ext][query]',
             clean: true,
         },
@@ -31,6 +31,22 @@ module.exports = (env, argv) => {
                     use: [
                         MiniCssExtractPlugin.loader,
                         'css-loader',
+                        'postcss-loader',
+                    ],
+                },
+                {
+                    test: /\.s[ac]ss$/i,
+                    use: [
+                        MiniCssExtractPlugin.loader,
+                        'css-loader',
+                        'postcss-loader',
+                        {
+                            loader: 'sass-loader',
+                            options: {
+                                implementation: require('sass'),
+                                sourceMap: !isProd,
+                            },
+                        },
                     ],
                 },
             ],
