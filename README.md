@@ -1,4 +1,4 @@
-# React Webpack App
+# TC3 React Webapp
 
 This is a front-end project built with React and Webpack 5. It serves as a template for creating modern web applications using TypeScript.
 
@@ -31,23 +31,23 @@ To get started with this project, follow these steps:
 
 1. **Clone the repository:**
    ```
-   git clone <repository-url>
-   cd react-webpack-app
+   git clone https://github.com/T-martens/TC3-Board-game.git
+   cd TC3-board-game
    ```
 
 2. **Install dependencies:**
    ```
-   npm install
+   yarn install
    ```
 
 3. **Run the application:**
    ```
-   npm start
+   yarn start
    ```
 
 4. **Build the application for production:**
    ```
-   npm run build
+   yarn run build
    ```
 
 ## Features
@@ -57,6 +57,7 @@ To get started with this project, follow these steps:
 - Webpack 5 for module bundling
 - ESLint for code linting
 - Babel for JavaScript transpilation
+- Suitcss for most of the style specifications
 
 ## Contributing
 

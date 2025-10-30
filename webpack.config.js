@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = (env, argv) => {
     const isProd = argv && argv.mode === 'production';
@@ -52,6 +53,19 @@ module.exports = (env, argv) => {
             ],
         },
         plugins: [
+            // copy public assets (images, manifest, icons) into dist
+            new CopyWebpackPlugin({
+                patterns: [
+                    {
+                        from: path.resolve(__dirname, 'public'),
+                        to: path.resolve(__dirname, 'dist'),
+                        globOptions: {
+                            // let HtmlWebpackPlugin emit index.html (don't overwrite)
+                            ignore: ['**/index.html'],
+                        },
+                    },
+                ],
+            }),
             new HtmlWebpackPlugin({
                 template: './public/index.html',
                 minify: isProd
@@ -89,7 +103,12 @@ module.exports = (env, argv) => {
         },
         devtool: isProd ? 'source-map' : 'eval-cheap-module-source-map',
         devServer: {
-            static: './dist',
+            // serve both the public folder and the generated dist so static assets
+            // in `public/` are available during development
+            static: [
+                { directory: path.resolve(__dirname, 'public') },
+                { directory: path.resolve(__dirname, 'dist') },
+            ],
             hot: true,
             open: true,
             port: 3000,
