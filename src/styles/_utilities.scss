@@ -1,0 +1,34 @@
+// Padding utilities generator (SUIT-style u- utilities)
+$sizes: (
+  xs: 4px,
+  sm: 8px,
+  md: 16px,
+  lg: 24px,
+  xl: 32px
+);
+
+// Base utility names (defaults defined below)
+
+@each $name, $value in $sizes {
+  .u-pad--#{$name} { padding: $value !important; }
+
+  .u-padHorizontal--#{$name} {
+    padding-left: $value !important;
+    padding-right: $value !important;
+  }
+
+  .u-padVertical--#{$name} {
+    padding-top: $value !important;
+    padding-bottom: $value !important;
+  }
+
+  .u-padTop--#{$name} { padding-top: $value !important; }
+  .u-padRight--#{$name} { padding-right: $value !important; }
+  .u-padBottom--#{$name} { padding-bottom: $value !important; }
+  .u-padLeft--#{$name} { padding-left: $value !important; }
+}
+
+// Directionless helpers without size default to md if needed
+.u-pad { padding: map-get($sizes, md) !important; }
+.u-padHorizontal { padding-left: map-get($sizes, md) !important; padding-right: map-get($sizes, md) !important; }
+.u-padVertical { padding-top: map-get($sizes, md) !important; padding-bottom: map-get($sizes, md) !important; }
