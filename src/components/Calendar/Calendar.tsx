@@ -18,7 +18,7 @@ export default function GoogleCalendarEmbed({
   )}&ctz=${encodeURIComponent(tz)}&mode=${encodeURIComponent(view)}&showTitle=0&showNav=1&showDate=1&showPrint=0`;
 
   return (
-    <div className="calendar u-posRelative u-sizeFull u-padVertical--md">
+    <div className="calendar u-posRelative u-sizeFull">
       <iframe
         title="Google Calendar"
         src={src}

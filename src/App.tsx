@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './components/Header/Header';
-import GoogleCalendarEmbed from './components/Calendar/Calendar';
-import { CALENDAR_API_URL } from './common/consts';
+import { Events } from './components/Events/Events';
 
 /**
  * DO we want to have separate pages for the about section and events?
@@ -13,12 +12,7 @@ const App: React.FC = () => {
     <div className="container">
       <Header />
       {/* TODO: Added a welcome message/ about section  */}
-      <GoogleCalendarEmbed
-        calendarId={CALENDAR_API_URL}
-        view="MONTH"
-        tz="America/Chicago"
-        height={700}
-      />
+      <Events />
       {/** TODO: a social section as well for email/discord */}
     </div>
   );
