@@ -1,4 +1,4 @@
-@import 'suitcss';
+@use './media' as *;
 
 :root {
   --Grid-gutterSize: 25px;
@@ -15,10 +15,16 @@ body {
 
 h1 {
   font-size: 54px;
+  @include media-query(mobile) {
+    font-size: 36px;
+  }
 }
 
 h2 {
   font-size: 36px;
+  @include media-query(mobile) {
+    font-size: 28px;
+  }
 }
 
 .container {
