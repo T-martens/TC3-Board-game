@@ -13,7 +13,7 @@ export const Contact: React.FC = () => {
           <h3>Email</h3>
           <p>
             Have questions or want to get in touch? Reach out to us via email at{' '}
-            <a href={`mailto:${EMAIL_CONTACT}`}>{EMAIL_CONTACT}</a>.
+            <a href={`mailto:${EMAIL_CONTACT}`}>{EMAIL_CONTACT}</a>
           </p>
         </div>
         <div className="contact-method">
