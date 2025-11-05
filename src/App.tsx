@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header/Header';
 import { Events } from './components/Events/Events';
+import { Contact } from './components/Contact/Contact';
 
 /**
  * DO we want to have separate pages for the about section and events?
@@ -13,7 +14,7 @@ const App: React.FC = () => {
       <Header />
       {/* TODO: Added a welcome message/ about section  */}
       <Events />
-      {/** TODO: a social section as well for email/discord */}
+      <Contact />
     </div>
   );
 };
