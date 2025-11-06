@@ -1,14 +1,32 @@
 @use '../../styles/media.scss' as *;
 
 .header {
+  padding-top: 20px;
   width: 100%;
   position: relative;
-  @include media-query(mobile) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .desktop-logo {
+    display: block;
+    @include media-query(small-medium) {
+      display: none;
+    }
   }
+
+  .mobile-logo {
+    display: none;
+    @include media-query(small-medium) {
+      display: block;
+    }
+  }
+
   img {
-    height: 150px;
+    height: 60px;
+    @include media-query(small-medium) {
+      height: 60px;
+    }
   }
 }

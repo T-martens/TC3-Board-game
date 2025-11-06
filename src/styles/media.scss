@@ -5,6 +5,7 @@ $breakpoints: (
   mobile: 767px,
   tablet: 1023px,
   desktop: 1024px,
+  small-medium: 1024px,
 );
 
 // _mixins.scss or similar
@@ -22,6 +23,14 @@ $breakpoints: (
       }
     } @else if $breakpoint == desktop {
       @media (min-width: $breakpoint-value) {
+        @content;
+      }
+    } @else if $breakpoint == small-medium {
+      @media (max-width: $breakpoint-value) {
+        @content;
+      }
+    } @else if $breakpoint == medium-large {
+      @media (min-width: (map.get($breakpoints, mobile) + 1)) {
         @content;
       }
     }

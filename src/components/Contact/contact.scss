@@ -2,12 +2,18 @@
   margin: 30px 0;
   .contact-methods-wrapper {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: row;
+    gap: 100px;
     position: relative;
     width: 100%;
-    padding: 30px;
-    border: 1px solid red;
+    padding: 15px 0;
+    justify-content: center;
+  }
+  .contact-method {
+    position: relative;
+    width: 300px;
+    background-color: #f5f5f5;
     border-radius: 25px;
+    padding: 20px;
   }
 }

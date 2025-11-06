@@ -6,6 +6,16 @@
 * {
   box-sizing: border-box;
 }
+/* enable CSS smooth scroll but respect reduced-motion user preference */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 body {
   margin: 0;
   padding: 0;

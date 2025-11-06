@@ -18,6 +18,7 @@ export const Contact: React.FC = () => {
         </div>
         <div className="contact-method">
           <h3>Discord</h3>
+          <img src="/images/discord-logo.png" height={50} alt="discord logo"></img>
           <p>
             Join our Discord community to chat with fellow board game enthusiasts, stay updated on
             events, and share your gaming experiences. Click{' '}

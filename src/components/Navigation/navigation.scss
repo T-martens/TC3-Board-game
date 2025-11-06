@@ -1,0 +1,13 @@
+.navigation {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 30px;
+  align-items: center;
+  a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #007bff;
+  }
+}
