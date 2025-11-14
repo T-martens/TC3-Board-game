@@ -11,14 +11,6 @@ export const Navigation: React.FC = () => {
         <a href={`#${SECTION_IDS.events}`}>Events</a>
         <a href={`#${SECTION_IDS.hosts}`}>Hosts</a>
         <a href={`#${SECTION_IDS.contact}`}>Contact Us</a>
-        <a
-          href={`${DISCORD_INVITE_URL}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="discord-link"
-        >
-          <img src="images/discord-logo.png" height={44}></img>
-        </a>
       </nav>
       <MobileNavigation />
     </>
