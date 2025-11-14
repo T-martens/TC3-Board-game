@@ -5,4 +5,5 @@ export const SECTION_IDS = {
   events: 'events',
   about: 'about',
   contact: 'contact',
+  hosts: 'hosts',
 };

@@ -1,7 +1,32 @@
+@use '../../styles/media.scss' as *;
 .events-section {
   margin: 30px 0;
 
   h2 {
     margin: 0px;
+  }
+  .events--wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding-top: 10px;
+    position: relative;
+    @include media-query(small-medium) {
+      flex-direction: column;
+      gap: 15px;
+    }
+    .events--description {
+      width: 20%;
+      position: relative;
+      @include media-query(small-medium) {
+        width: 100%;
+      }
+    }
+    p {
+      position: relative;
+      font-size: 1.1rem;
+      line-height: 2rem;
+      margin: 0px;
+    }
   }
 }
