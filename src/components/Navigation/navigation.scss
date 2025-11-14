@@ -1,3 +1,5 @@
+@use '../../styles/media.scss' as *;
+
 .navigation {
   height: 50px;
   display: flex;
@@ -5,9 +7,58 @@
   justify-content: flex-start;
   gap: 30px;
   align-items: center;
+  @include media-query(small-medium) {
+    display: none;
+  }
   a {
     text-decoration: none;
     font-size: 1.25rem;
     color: #007bff;
+  }
+}
+.mobile-navigation {
+  display: none;
+  @include media-query(small-medium) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+  }
+  .menu-button {
+    font-size: 40px;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    top: 5px;
+  }
+  .close-icon {
+    height: 25px;
+  }
+  & .hamburger-dash {
+    border-radius: 3px;
+    height: 3px;
+    margin: 5px 0px;
+    border: 2px solid black;
+  }
+  .mobile-menu {
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    height: calc(100vh - 90px);
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    .mobile-link {
+      position: relative;
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      padding-left: 20px;
+      text-decoration: none;
+    }
   }
 }
