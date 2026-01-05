@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '20'
           
       - name: Install dependencies
         run: yarn install
@@ -29,11 +29,13 @@ jobs:
           git fetch origin production || git checkout --orphan production
           git checkout production
 
-      - name: Remove old build files
-        run: rm -rf *
+      - name: Remove non-prod files
+        run: |
+          rm -rf node_modules/ postcss.config.cjs README.md tsconfig.json yarn.lock \
+          license.txt package.json src/ webpack.config.js
 
       - name: Copy build files
-        run: cp -r build/* .
+        run: mv dist/* .
 
       - name: Configure Git
         run: |
@@ -47,4 +49,4 @@ jobs:
 
       - name: Push to production branch
         run: |
-          git push origin production
+          git push -f origin production
