@@ -1,13 +1,24 @@
 import React from 'react';
-import Hello from './components/Hello';
 import Header from './components/Header/Header';
+import { Events } from './components/Events/Events';
+import { Contact } from './components/Contact/Contact';
+import { Hosts } from './components/Hosts/Hosts';
+import { About } from './components/About/About';
 
+/**
+ * DO we want to have separate pages for the about section and events?
+ * or just everything on the main page
+ * @returns
+ */
 const App: React.FC = () => {
   return (
     <div className="container">
       <Header />
       <h1>Welcome to the Twin Cities Cardboard Crew</h1>
-      <Hello />
+      <About />
+      <Events />
+      <Hosts />
+      <Contact />
     </div>
   );
 };
