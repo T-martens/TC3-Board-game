@@ -8,11 +8,12 @@ This is a front-end project built with React and Webpack 5. It serves as a templ
 react-webpack-app
 ├── public
 │   └── index.html         # Main HTML file
+│   └── images             # images 
 ├── src
-│   ├── index.tsx         # Entry point of the React application
-│   ├── App.tsx           # Main App component
+│   ├── index.tsx          # Entry point of the React application
+│   ├── App.tsx            # Main App component
 │   ├── components         # Directory for React components
-│   │   └── Hello.tsx     # Hello component
+│   │   └── Header         # Header
 │   ├── styles             # Directory for styles
 │   │   └── index.css      # Global and component-specific styles
 │   └── types              # Directory for TypeScript types

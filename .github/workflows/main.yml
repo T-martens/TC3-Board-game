@@ -1,0 +1,52 @@
+name: Deploy Production Build
+
+on:
+  push:
+    branches:
+      - master 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build the site
+        run: yarn run build
+
+      - name: Checkout production branch
+        run: |
+          git fetch origin production || git checkout --orphan production
+          git checkout production
+
+      - name: Remove non-prod files
+        run: |
+          rm -rf node_modules/ postcss.config.cjs README.md tsconfig.json yarn.lock \
+          license.txt package.json src/ webpack.config.js
+
+      - name: Copy build files
+        run: mv dist/* .
+
+      - name: Configure Git
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+
+      - name: Commit changes
+        run: |
+          git add .
+          git commit -m "Deploy production build" || echo "No changes to commit"
+
+      - name: Push to production branch
+        run: |
+          git push -f origin production
