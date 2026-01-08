@@ -48,6 +48,10 @@
       @include media-query(small-medium) {
         margin-bottom: 0px;
       }
+      @include media-query(mobile) {
+        width: 100%;
+        height: auto;
+      }
     }
     p {
       line-height: 2.25rem;
