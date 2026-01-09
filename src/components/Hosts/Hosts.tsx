@@ -8,7 +8,21 @@ export const Hosts: React.FC = () => {
       <h2>Meet Our Hosts</h2>
       <div className="host--wrapper">
         <div className="host">
-          <img height={300} src="/images/hosts/andrew.jpg" alt="host 3" />
+          <img height={300} src="/images/hosts/kyle.jpg" alt="Kyle" />
+          <div className="host--info">
+            <p>
+              "Hi! I'm Kyle (he/him) and one of the co-founders of TC3! I reside in St. Paul and
+              have been playing board games my whole life, some of my earliest memories were playing
+              Sorry! or Sequence with my family. My all time favorite game is Cosmic Encounter, but
+              I love everything from a trick-taking game to a crunchy Euro (A Feast for Odin
+              anyone?) When I am not board gaming I am in search of the best food the Twin Cities
+              has to offer, following the Vikings, playing darts, or watching Formula 1."
+            </p>
+            <h4>Kyle</h4>
+          </div>
+        </div>
+        <div className="host">
+          <img height={300} src="/images/hosts/andrew.jpg" alt="Andrew" />
           <div className="host--info">
             <p>
               "Hello there! My name is Andrew (He/Him) and you will most often find me at our weekly
@@ -22,7 +36,7 @@ export const Hosts: React.FC = () => {
           </div>
         </div>
         <div className="host">
-          <img height={300} src="/images/hosts/molly.png" alt="host 2" />
+          <img height={300} src="/images/hosts/molly.png" alt="Molly" />
           <div className="host--info">
             <p>
               "Hi, I'm Molly (she/her), and I'm one of TC3's hosts! I live in the south metro with
@@ -36,7 +50,7 @@ export const Hosts: React.FC = () => {
           </div>
         </div>
         <div className="host">
-          <img height={300} src="/images/hosts/jason.png" alt="host 4" />
+          <img height={300} src="/images/hosts/jason.png" alt="Jason" />
           <div className="host--info">
             <p>
               "Hey all, Jason here. I'm based in the south suburbs. I'm primarily at the Thursday
@@ -49,7 +63,7 @@ export const Hosts: React.FC = () => {
           </div>
         </div>
         <div className="host">
-          <img height={300} src="/images/hosts/jessica.png" alt="host 1" />
+          <img height={300} src="/images/hosts/jessica.png" alt="Jessica" />
           <div className="host--info">
             <p>
               "Hey, my name is Jessica, and I'm the host for our monthly northern burb meetups! Some
@@ -63,7 +77,7 @@ export const Hosts: React.FC = () => {
           </div>
         </div>
         <div className="host">
-          <img height={300} src="/images/hosts/john.png" alt="host 5" />
+          <img height={300} src="/images/hosts/john.png" alt="John" />
           <div className="host--info">
             <p className="small">
               "Hello! I'm John C. (he/him). I am a host at the once-a-month weekend meetup for
