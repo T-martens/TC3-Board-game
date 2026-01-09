@@ -7,6 +7,8 @@ on:
 
 jobs:
   build:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
 
     steps:
@@ -31,8 +33,8 @@ jobs:
 
       - name: Remove non-prod files
         run: |
-          rm -rf node_modules/ postcss.config.cjs README.md tsconfig.json yarn.lock \
-          license.txt package.json src/ webpack.config.js
+          rm -rf node_modules/ src/ assets/ images/ \
+          postcss.config.cjs README.md tsconfig.json yarn.lock license.txt package.json webpack.config.js
 
       - name: Copy build files
         run: mv dist/* .
