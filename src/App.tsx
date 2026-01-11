@@ -8,7 +8,6 @@ import { About } from './components/About/About';
 /**
  * DO we want to have separate pages for the about section and events?
  * or just everything on the main page
- * @returns
  */
 const App: React.FC = () => {
   return (

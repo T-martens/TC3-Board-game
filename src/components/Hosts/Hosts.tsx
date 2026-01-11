@@ -22,20 +22,6 @@ export const Hosts: React.FC = () => {
           </div>
         </div>
         <div className="host">
-          <img height={300} src="/images/hosts/andrew.jpg" alt="Andrew" />
-          <div className="host--info">
-            <p>
-              "Hello there! My name is Andrew (He/Him) and you will most often find me at our weekly
-              Thursday meet ups. I discovered my love of board games during the pandemic by playing
-              games such as Spirit Island, Horrified, and Harry Potter Hogwarts battle with my
-              spouse. I'm a big fan of co-operative / easy / breezy games and I'm always down for a
-              good time. Outside of board game I am a huge fan of walking, warm beverages, and
-              traveling."
-            </p>
-            <h4>Andrew</h4>
-          </div>
-        </div>
-        <div className="host">
           <img height={300} src="/images/hosts/molly.png" alt="Molly" />
           <div className="host--info">
             <p>
@@ -47,6 +33,20 @@ export const Hosts: React.FC = () => {
               collection of house plants. I can't wait to see everyone at the table!"
             </p>
             <h4>Molly</h4>
+          </div>
+        </div>
+        <div className="host">
+          <img height={300} src="/images/hosts/andrew.jpg" alt="Andrew" />
+          <div className="host--info">
+            <p>
+              "Hello there! My name is Andrew (He/Him) and you will most often find me at our weekly
+              Thursday meet ups. I discovered my love of board games during the pandemic by playing
+              games such as Spirit Island, Horrified, and Harry Potter Hogwarts battle with my
+              spouse. I'm a big fan of co-operative / easy / breezy games and I'm always down for a
+              good time. Outside of board game I am a huge fan of walking, warm beverages, and
+              traveling."
+            </p>
+            <h4>Andrew</h4>
           </div>
         </div>
         <div className="host">
