@@ -10,6 +10,7 @@ export const Hosts: React.FC = () => {
         <div className="host">
           <img height={300} src="/images/hosts/kyle.jpg" alt="Kyle" />
           <div className="host--info">
+            <h4 className="host--name tablet">Kyle</h4>
             <p>
               "Hi! I'm Kyle (he/him) and one of the co-founders of TC3! I reside in St. Paul and
               have been playing board games my whole life, some of my earliest memories were playing
@@ -18,12 +19,13 @@ export const Hosts: React.FC = () => {
               anyone?) When I am not board gaming I am in search of the best food the Twin Cities
               has to offer, following the Vikings, playing darts, or watching Formula 1."
             </p>
-            <h4>Kyle</h4>
+            <h4 className="host--name desktop">Kyle</h4>
           </div>
         </div>
         <div className="host">
           <img height={300} src="/images/hosts/molly.png" alt="Molly" />
           <div className="host--info">
+            <h4 className="host--name tablet">Molly</h4>
             <p>
               "Hi, I'm Molly (she/her), and I'm one of TC3's hosts! I live in the south metro with
               my kiddo, husband, and dog. Just some of my favorite games include Viticulture,
@@ -32,12 +34,13 @@ export const Hosts: React.FC = () => {
               "grandma" hobbies like knitting/crochet/cross stitch, and caring for my ever growing
               collection of house plants. I can't wait to see everyone at the table!"
             </p>
-            <h4>Molly</h4>
+            <h4 className="host--name desktop">Molly</h4>
           </div>
         </div>
         <div className="host">
           <img height={300} src="/images/hosts/andrew.jpg" alt="Andrew" />
           <div className="host--info">
+            <h4 className="host--name tablet">Andrew</h4>
             <p>
               "Hello there! My name is Andrew (He/Him) and you will most often find me at our weekly
               Thursday meet ups. I discovered my love of board games during the pandemic by playing
@@ -46,12 +49,13 @@ export const Hosts: React.FC = () => {
               good time. Outside of board game I am a huge fan of walking, warm beverages, and
               traveling."
             </p>
-            <h4>Andrew</h4>
+            <h4 className="host--name desktop">Andrew</h4>
           </div>
         </div>
         <div className="host">
           <img height={300} src="/images/hosts/jason.png" alt="Jason" />
           <div className="host--info">
+            <h4 className="host--name tablet">Jason</h4>
             <p>
               "Hey all, Jason here. I'm based in the south suburbs. I'm primarily at the Thursday
               night meetups, but venture out to others from time to time. My favorite types of games
@@ -59,12 +63,13 @@ export const Hosts: React.FC = () => {
               and Pagan, but I'm usually up for anything with good conflict. Outside of gaming, I'm
               an avid hiker, biker, and general lover of outdoors."
             </p>
-            <h4>Jason</h4>
+            <h4 className="host--name desktop">Jason</h4>
           </div>
         </div>
         <div className="host">
           <img height={300} src="/images/hosts/jessica.png" alt="Jessica" />
           <div className="host--info">
+            <h4 className="host--name tablet">Jessica</h4>
             <p>
               "Hey, my name is Jessica, and I'm the host for our monthly northern burb meetups! Some
               of my favorite games include euros (Castles of Burgundy, Brass Birmingham, Power Grid)
@@ -73,12 +78,13 @@ export const Hosts: React.FC = () => {
               games, I enjoy getting everyone together and helping those find their place in the
               hobby."
             </p>
-            <h4>Jessica</h4>
+            <h4 className="host--name desktop">Jessica</h4>
           </div>
         </div>
         <div className="host">
           <img height={300} src="/images/hosts/john.png" alt="John" />
           <div className="host--info">
+            <h4 className="host--name tablet">John</h4>
             <p className="small">
               "Hello! I'm John C. (he/him). I am a host at the once-a-month weekend meetup for
               trick-taking card games, along with the monthly weekend meetup dedicated to general
@@ -90,7 +96,7 @@ export const Hosts: React.FC = () => {
               shuffling cards, I enjoy watching Timberwolves and Vikings games, getting lost in a
               good book, or catching live music at a concert."
             </p>
-            <h4>John</h4>
+            <h4 className="host--name desktop">John</h4>
           </div>
         </div>
       </div>
