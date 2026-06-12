@@ -29,6 +29,13 @@ export const MobileNavigation: React.FC = () => {
           </a>
           <a
             className="mobile-link"
+            href={`#${SECTION_IDS.discord}`}
+            onClick={() => setIsOpen(false)}
+          >
+            Discord
+          </a>
+          <a
+            className="mobile-link"
             href={`#${SECTION_IDS.events}`}
             onClick={() => setIsOpen(false)}
           >

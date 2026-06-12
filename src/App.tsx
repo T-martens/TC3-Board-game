@@ -4,6 +4,7 @@ import { Events } from './components/Events/Events';
 import { Contact } from './components/Contact/Contact';
 import { Hosts } from './components/Hosts/Hosts';
 import { About } from './components/About/About';
+import { Discord } from './components/Discord/Discord';
 
 /**
  * DO we want to have separate pages for the about section and events?
@@ -15,6 +16,7 @@ const App: React.FC = () => {
       <Header />
       <h1>Welcome to the Twin Cities Cardboard Crew</h1>
       <About />
+      <Discord />
       <Events />
       <Hosts />
       <Contact />

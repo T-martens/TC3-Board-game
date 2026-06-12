@@ -3,6 +3,7 @@ export const DISCORD_INVITE_URL = 'https://discord.gg/qjSyXqbbmg';
 export const EMAIL_CONTACT = 'info@tc3.games';
 export const SECTION_IDS = {
   events: 'events',
+  discord: 'discord',
   about: 'about',
   contact: 'contact',
   hosts: 'hosts',
