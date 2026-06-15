@@ -8,6 +8,7 @@ export const Navigation: React.FC = () => {
     <>
       <nav className="navigation">
         <a href={`#${SECTION_IDS.about}`}>About</a>
+        <a href={`#${SECTION_IDS.discord}`}>Discord</a>
         <a href={`#${SECTION_IDS.events}`}>Events</a>
         <a href={`#${SECTION_IDS.hosts}`}>Hosts</a>
         <a href={`#${SECTION_IDS.contact}`}>Contact Us</a>
