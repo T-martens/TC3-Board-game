@@ -10,14 +10,11 @@ export const Events: React.FC = () => {
       <div className="events--wrapper">
         <div className="events--description">
           <p>
-            Our weekly Thursday board game nights typically meets at{' '}
-            <a href="https://maps.app.goo.gl/ZvidgsxCbZERwPF69">Dual Citizen Brewery</a> in Saint
-            Paul.
-          </p>
-          <p>
-            We also host special events and game days throughout the month such as a trick taking
-            game day or meetups in the north or south metro. Check out our calendar for upcoming
-            events!
+            Our weekly Thursday night meetups are our main event, and we welcome all levels of board
+            gamers to join us! We have a variety of games available to play, and our hosts are
+            always happy to teach new players. We also host special events and game days throughout
+            the month such as a trick taking game day or meetups in the north or south metro. Check
+            out our calendar for upcoming events!
           </p>
         </div>
         <GoogleCalendarEmbed
