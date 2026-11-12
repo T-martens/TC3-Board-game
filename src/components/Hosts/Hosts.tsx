@@ -23,36 +23,6 @@ export const Hosts: React.FC = () => {
           </div>
         </div>
         <div className="host">
-          <img height={300} src="/images/hosts/molly.png" alt="Molly" />
-          <div className="host--info">
-            <h4 className="host--name tablet">Molly</h4>
-            <p>
-              "Hi, I'm Molly (she/her), and I'm one of TC3's hosts! I live in the south metro with
-              my kiddo, husband, and dog. Just some of my favorite games include Viticulture,
-              Castles of Burgundy, and Obsession. I've also recently discovered a love for trick
-              takers. When I'm not board gaming, I also enjoy TTRPGs (D&D, VtM, Delta Green),
-              "grandma" hobbies like knitting/crochet/cross stitch, and caring for my ever growing
-              collection of house plants. I can't wait to see everyone at the table!"
-            </p>
-            <h4 className="host--name desktop">Molly</h4>
-          </div>
-        </div>
-        <div className="host">
-          <img height={300} src="/images/hosts/andrew.jpg" alt="Andrew" />
-          <div className="host--info">
-            <h4 className="host--name tablet">Andrew</h4>
-            <p>
-              "Hello there! My name is Andrew (He/Him) and you will most often find me at our weekly
-              Thursday meet ups. I discovered my love of board games during the pandemic by playing
-              games such as Spirit Island, Horrified, and Harry Potter Hogwarts battle with my
-              spouse. I'm a big fan of co-operative / easy / breezy games and I'm always down for a
-              good time. Outside of board game I am a huge fan of walking, warm beverages, and
-              traveling."
-            </p>
-            <h4 className="host--name desktop">Andrew</h4>
-          </div>
-        </div>
-        <div className="host">
           <img height={300} src="/images/hosts/jason.png" alt="Jason" />
           <div className="host--info">
             <h4 className="host--name tablet">Jason</h4>
